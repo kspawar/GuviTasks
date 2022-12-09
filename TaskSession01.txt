@@ -1,0 +1,105 @@
+*******   Write a blog on Difference between HTTP1.1 vs HTTP2   **********
+
+HTTP stands for hypertext transfer protocol & it is used in client-server communication. 
+By using HTTP user sends the request to the server & the server sends the response to the user. 
+HTTP is a top-level application protocol that exchanges information between a client computer 
+and a local or remote web server.
+In this process, a client sends a text-based request to a server by calling a method like GET or POST. 
+In response, the server sends a resource like an HTML page back to the client.
+
+HTTP1.1 : 
+1. 	HTTP/1.1 transfer all the requests & responses in the plain text message form.
+2. 	Head of line blocking in which TCP connection is blocked all other requests 
+	until the response does not receive. all the information related to the header 
+	file is repeated in every request.
+3.	It uses resource inlining , if client needs a specific file to render a page then inlining
+	that file will reduced the number of request by the client.
+4.	It compresses data by itself.
+	
+	
+HTTP2 : 
+1. 	HTTP/2 works on the binary framing layer instead of textual that converts all the messages 
+	in binary format.
+2.	It works on fully multiplexed that is one TCP connection is used for multiple requests.
+3.	The server sends all the other files like CSS & JS without the request of the client using 
+	the PUSH frame.
+4.	HTTP/2 uses HPACK which is used to split data from header. it compresses the header.
+
+-------------------------------------------------------------------------------------------------
+********  Write a blog about objects and its internal representation in Javascript  *********
+
+Objects are important data types in javascript. 
+Objects are not primitive datatypes (i.e. number, string, boolean, etc.). 
+Primitive data types contain one value but Objects can hold many values in form of Key: value pair. 
+These keys can be variables or functions and are called properties and methods, respectively, 
+in the context of an object.
+
+Every object has some property associated with some value. 
+These values can be accessed using these properties associated with them.
+
+let stud = new Student();
+stud.name = 'Arun';
+stud.rollno = 35;
+stud.dept = 'Computer';
+
+After creating myCar object, the value inside the object can be accessed using keys.
+
+stud.name
+Output : Arun
+
+Unassigned properties of an object are undefined.
+
+The syntax for adding a property to an object is :
+ObjectName.ObjectProperty = propertyValue;
+
+
+The syntax to access a property from an object is:
+objectName.property        
+           
+objectName["property”]     
+           
+objectName[expression]  
+
+An object method is an object property containing a function definition.
+function(){ console.log("Writing") }
+
+Create JavaScript Object with Object Literal :-
+let stud = {name: 'Arun', rollno: 35, dept: 'Computer'};
+
+Create JavaScript Object with Constructor :-
+Constructor is nothing but a function and with help of new keyword.
+
+function Student(name, rollno){
+	this.name = name;
+	this.rollno = rollno;
+}
+
+let stud = new Student('Arun', 35);
+let stud = new Student('Ajay', 45);
+
+Using the JavaScript Keyword new :-
+It is similar to above example.
+let stud = new Student();
+stud.name  = 'Arun';
+stud.rollno = 45;
+
+Using the Object.create method :-
+Objects can also be created using the Object.create() method. 
+This method can be very useful, because it allows you to choose the 
+prototype object for the object you want to create, without having to define a constructor function.
+
+var Student = {
+	College : 'MU College';
+	displayclg: function(){
+					console.log(this.College);
+				};
+};
+
+let arun = Object.create(Student);
+arun.displayclg();
+Output : MU College
+
+let ajay = Object.create(Student);
+ajay.College = 'MAH College';
+ajay.displayclg();
+MAH College
