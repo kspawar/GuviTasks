@@ -1,0 +1,25 @@
+Window Object:
+
+Window object represents the browser's window or potentially frame, that 
+a document is displayed in.
+It is the top most object and outermost element of the object hierarchy.
+
+Document Object:
+
+When an HTML document is loaded into a web browser, it becomes a document object.
+The document object is the root node of the HTML document.
+The document object is a property of the window object.
+The document object is accessed with:
+window.document or just document
+
+
+The window object represents a window/tab containing a DOM document where as document 
+object is property of window object that points to the DOM document loaded in that window.
+
+We can access a document object either using window.document property or using document 
+object directly as window is global object.
+
+The other major difference is that both window object and document object have properties 
+and methods. Few method names are same in both objects but with different behavior. 
+In the below example window.open() opens a new tab or window and document.open() 
+creates a blank document within the window.
