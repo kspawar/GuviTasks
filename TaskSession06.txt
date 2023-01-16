@@ -508,10 +508,6 @@ Solution:
     console.log(str1); 
    })("abcd")
 
-   
-Problem 11:
-Solution:
-
 
 Problem 12:
 Solution:
