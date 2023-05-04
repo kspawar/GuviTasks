@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>RESUME</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" integrity="sha512-Mo79lrQ4UecW8OCcRUZzf0ntfMNgpOFR46Acj2ZtWO8vKhBvD79VCp3VOKSzk6TovLg5evL3Xi3u475Q/jMu4g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <style>
+    @media screen and (width: 1000px) {}
+
+    .axis {
+      position: absolute;
+    }
+
+    .cross-axis {
+      left: 50%;
+      width: 10px;
+      height: 100vh;
+      background-color: blue;
+    }
+
+    .main-axis {
+      top: 50%;
+      height: 10px;
+      width: 100vw;
+      background-color: red;
+    }
+
+    .flex-container {
+      border: 5px solid black;
+      height: 100vh;
+      display: flex;
+      /* Following Properties has No Meaning without display: flex; */
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .flex-child {
+      border: 3px solid;
+      height: 100px;
+      width: 100px;
+    }
+
+    .education {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="padding: 50px 0px;background-color: #ccc;">
+    <div style="display: flex;justify-content: center;">
+      <div style="height: 150px;width: 150px;border-radius: 50%;border: 5px dotted yellow;">
+        <!-- <img src="https://thumbs.dreamstime.com/b/person-gray-photo-placeholder-man-shirt-white-background-person-gray-photo-placeholder-man-132818487.jpg"
+          alt="man" style="height: 100%;width: 100%;border-radius: 50%;" /> -->
+        <img src="Kishor_Photograph.jpg" alt="man" style="height: 100%;width: 100%;border-radius: 50%;" />
+      </div>
+    </div>
+    <div style="height: 50px;background-color: #fff;position: relative;justify-content: center;">
+      <div style="
+        border-radius: 10px;
+        padding: 32px;
+        background-color: yellow;
+        display: inline-flex;
+        position: absolute;
+        top: -25px;
+        left: calc(50% - 147px);
+      ">
+        <h1 style="margin: 0px;">Kishor Pawar</h1>
+      </div>
+    </div>
+  </div>
+  <div style="padding: 5px">
+    <h6 style="display: inline-flex;padding-left: 10%;padding-right: 10%;">Flat No.202, Mahavir Heights, Sector 23, Ulwe, Navi Mumbai| 9175849446 | kishorpawarcomp@gmail.com</h6>
+  </div>
+  <hr>
+  <div class="container">
+    <!-- Start of Main Profile -->
+    <div class="row">
+      <div class="col-md" style="border-right: 1px solid black;">
+        <!-- Left side of the page -->
+        <div class="row">
+          <div class="flex-container" style="
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(69, 67, 67);
+            border: 5px dotted yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: yellow;
+          ">
+            <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+          </div>
+          <div style="color: black; position: relative; left: 70px; top: -40px;">
+            <h4>Profile</h4>
+          </div>
+          <div>
+            <p style="color: black">Currently working as a Software Engineer with Azentio Softwares. Mainly working on technologies like Pro*C, C,
+              Plsql and also have knowledge of JavaScript, Html, CSS, MongoDB. Looking for a great opportunity where I can
+              help organization to grow along with my skills and personal growth.</p>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="flex-container" style="
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(69, 67, 67);
+            border: 5px dotted yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: yellow;
+          ">
+            <i class="fa fa-wrench fa-2x" aria-hidden="true"></i>
+          </div>
+          <div style="color: black; position: relative; left: 70px; top: -40px;">
+            <h4>Skills</h4>
+          </div>
+          <div>
+            <h5>Technical Skills</h5>
+            <ul style="list-style-type: circle">
+              <li>Pro*C</li>
+              <li>C</li>
+              <li>SQL</li>
+              <li>Javascript</li>
+              <li>Html</li>
+              <li>Mongo</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Additional Skills</h5>
+            <ul style="list-style-type: circle">
+              <li>Project Development</li>
+              <li>Code Debugging</li>
+              <li>Documentation</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="flex-container" style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50%;
+              background-color: rgb(69, 67, 67);
+              border: 5px dotted yellow;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: yellow;
+            ">
+              <i class="fa fa-suitcase fa-2x" aria-hidden="true"></i>
+            </div>
+            <div style="color: black; position: relative; left: 70px; top: -40px;">
+              <h4>Work Experience</h4>
+            </div>
+            <div class="row">
+              <div class="col-md">
+                <h5>Azentio Softwares</h5>
+                <h6>Software Engineer</h6>
+              </div>
+              <div class="col-md" style="text-align: right;">
+                <h6>Apr-2021 - Current</h6>
+              </div>
+              <div>
+                <u>Project : Kastle IRM (Integrated Risk Management)</u>
+                <p>
+                  <u>Description: </u>
+                  IRM provides end to end market risk management solutions to Financial intermediaries. It takes large data i.e. transactions
+                  or cashflows from user and performs integrated computation covering most markets such as Forex, Fixed Income,
+                  Equity. IRM consists of several modules where it computes Value At Risk, Std. Capital Charge , Sensitivity
+                  Analysis etc.Worked on Pro*C / C, SQL, Python.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <!-- Start Right side of page-->
+        <div class="row">
+          <div class="flex-container" style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50%;
+              background-color: rgb(69, 67, 67);
+              border: 5px dotted yellow;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: yellow;
+            ">
+            <i class="fa fa-suitcase fa-2x" aria-hidden="true"></i>
+          </div>
+          <div style="color: black; position: relative; left: 70px; top: -40px;">
+            <h4>Work Experience</h4>
+          </div>
+          <div class="row">
+            <div class="col-md">
+              <h5>3I Infotech</h5>
+              <h6>Software Engineer</h6>
+            </div>
+            <div class="col-md" style="text-align: right;">
+              <h6>Aug-2020 - Apr-2021</h6>
+            </div>
+            <div>
+              <u>Project : Kastle IRM (Integrated Risk Management)</u>
+              <p>
+                <u>Description: </u>
+                IRM provides end to end market risk management solutions to Financial intermediaries. It takes large data i.e. transactions
+                or cashflows from user and performs integrated computation covering most markets such as Forex, Fixed Income,
+                Equity. IRM consists of several modules where it computes Value At Risk, Std. Capital Charge , Sensitivity
+                Analysis etc.Worked on Pro*C / C, SQL, Python.
+              </p>
+            </div>
+
+
+            <div class="col-md">
+              <h5>Accelya Solutions (Payroll: RandStand India)</h5>
+              <h6>Software Development Engineer</h6>
+            </div>
+            <div class="col-md" style="text-align: right;">
+              <h6>Jun-2019 - Jun-2020</h6>
+            </div>
+            <div>
+              <u>Project : Automated Proration Engine</u>
+              <p>
+                <u>Description: </u>
+                APEX performs division of total fares collected from passengers among all the airlines which are involved in journey using
+                prorate factors (weighted mileage). This fare includes base fare, taxes, surcharges etc. Worked on Pro*C
+                / C, SQL , Linux, Shell Scripting.
+              </p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div>
+          <!-- Start Educational Qualification -->
+          <div class="flex-container" style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50%;
+              background-color: rgb(69, 67, 67);
+              border: 5px dotted yellow;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: yellow;
+            ">
+            <i class="fa fa-book fa-2x" aria-hidden="true"></i>
+          </div>
+          <div style="color: black; position: relative; left: 70px; top: -40px;">
+            <h4>Educational Qualification</h4>
+          </div>
+          <!-- <div class="education">
+            <div style="text-align: center;">
+              <h6>
+                <u>Degree</u>
+              </h6>
+              <ul style="list-style-type: none;">
+                <li>Bachelor Of Engg</li>
+                <li>HSC</li>
+                <li>SSC</li>
+              </ul>
+            </div>
+            <div style="text-align: center;">
+              <h6>
+                <u>Year</u>
+              </h6>
+              <ul style="list-style-type: none;">
+                <li>2017</li>
+                <li>2012</li>
+                <li>2010</li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div class="education">
+            <table class="table table-bordered border-light table-sm">
+              <thead>
+                <tr>
+                  <th>
+                    <u>Degree</u>
+                  </th>
+                  <th>
+                    <u>Year</u>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>BE ( Computer Science )</td>
+                  <td>2017</td>
+                </tr>
+                <tr>
+                  <td>HSC</td>
+                  <td>2012</td>
+                </tr>
+                <tr>
+                  <td>SSC</td>
+                  <td>2010</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- End Educational Qualification -->
+        </div>
+
+        <div>
+          <!-- Start Certification -->
+          <div class="flex-container " style=" height: 50px; width: 50px; border-radius: 50%; background-color: rgb(69,
+              67, 67); border: 5px dotted yellow; display: flex; justify-content: center; align-items: center; color: yellow; ">
+            <i class="fa fa-pencil fa-2x " aria-hidden="true "></i>
+          </div>
+          <div style="color: black; position: relative; left: 70px; top: -40px; ">
+            <h4>Certification</h4>
+          </div>
+          <ul>
+            <li>Business Intelligence Data Analytics course from VIT Pune.</li>
+            <li>MySQL training spoken tutorial from IIT Bombay.</li>
+          </ul>
+          <!-- End Certification -->
+        </div>
+        <!-- End Right Side Of the page-->
+      </div>
+      <!-- End of Main Profile -->
+    </div>
+
+  </div>
+</body>
+
+</html>
